@@ -142,8 +142,8 @@ for (int j = dateIntList.size() - 1; j >= 0; j--) {
 //                }
         %>
         <tr id="<%=trId%>">
-            <td style="width: 61%">&nbsp;&nbsp;
-                <input id="<%=textId%>" type="text" size="80" value="<%=content%>"/>
+            <td style="width: 61%">
+                <input id="<%=textId%>" type="text" size="80" value="<%=content%>" style="margin-left: 10px;"/>
             </td>
             <td style="width: 20%; height: 30px;" align="center">
                 <div id="<%=rateId%>" style="height:20px;width: 100px;float:left"></div>
@@ -244,8 +244,8 @@ for (int j = dateIntList.size() - 1; j >= 0; j--) {
                 String downImgUrl = "/img/down1.png";
         %>
         <tr id="<%=trId%>">
-            <td style="width: 61%">&nbsp;&nbsp;
-                <input id="<%=textId%>" type="text" size="80" value="<%=content%>"/>
+            <td style="width: 61%">
+                <input id="<%=textId%>" type="text" size="80" value="<%=content%>" style="margin-left: 10px;"/>
             </td>
             <td style="width: 20%; height: 30px;" align="center">
                 <div id="<%=rateId%>" style="height:20px;width: 100px;float:left"></div>
@@ -347,8 +347,8 @@ for (int j = dateIntList.size() - 1; j >= 0; j--) {
                 String downImgUrl = "/img/down1.png";
         %>
         <tr id="<%=trId%>">
-            <td style="width: 61%">&nbsp;&nbsp;
-                <input id="<%=textId%>" type="text" size="80" value="<%=content%>"/>
+            <td style="width: 61%">
+                <input id="<%=textId%>" type="text" size="80" value="<%=content%>" style="margin-left: 10px;"/>
             </td>
             <td style="width: 20%; height: 30px;" align="center">
                 <div id="<%=rateId%>" style="height:20px;width: 100px;float:left"></div>
@@ -450,8 +450,8 @@ for (int j = dateIntList.size() - 1; j >= 0; j--) {
                 String downBtnId = prefix + "-downBtn" + k;
         %>
         <tr id="<%=trId%>">
-            <td colspan="2">&nbsp;&nbsp;
-                <textarea id="<%=textAreaId%>" rows="4" cols="92"><%=content%></textarea>
+            <td colspan="2">
+                <textarea id="<%=textAreaId%>" rows="4" cols="92" style="margin: 5px 0px 5px 10px; width: 678px;"><%=content%></textarea>
             </td>
             <td>
                 <button id="<%=deleteId%>" style="margin-left: 20px">删除</button>
@@ -507,7 +507,7 @@ for (int j = dateIntList.size() - 1; j >= 0; j--) {
         %>
 
         <tr>
-            <td colspan="4" align="right"><button id="<%=dateInt%>-finish">保存</button></td>
+            <td colspan="4" align="right" style="height: 40px;"><button id="<%=dateInt%>-finish" style="height: 35px;width: 76px;margin-right: 5px;">保存</button></td>
         </tr>
     </table>
     <%
