@@ -8,6 +8,11 @@
 <%
     List<Integer> dateIntList = (List<Integer>) request.getAttribute("dateIntList");
     String uid = (String) request.getAttribute("uid");
+
+    int part1Percent = 58;
+    int part2Percent = 17;
+    int part3Percent = 15;
+    int part4Percent = 10;
 %>
 
 <div>
@@ -142,21 +147,21 @@ for (int j = dateIntList.size() - 1; j >= 0; j--) {
 //                }
         %>
         <tr id="<%=trId%>">
-            <td style="width: 61%">
+            <td style="width: <%=part1Percent%>%">
                 <input id="<%=textId%>" type="text" size="80" value="<%=content%>" style="margin-left: 10px;"/>
             </td>
-            <td style="width: 20%; height: 30px;" align="center">
+            <td style="width: <%=part2Percent%>%; height: 30px;" align="center">
                 <div id="<%=rateId%>" style="height:20px;width: 100px;float:left"></div>
                 <button id="<%=resetButtonId%>" style="margin-left: 3px;margin-top: 2px">重置</button>
                 <input id="<%=starId%>" type="hidden" value="<%=rateValue%>"/>
                 <input id="<%=hiddenTid%>" type="hidden" value="<%=hiddenTidValue%>"/>
                 <input id="<%=priorityId%>" type="hidden" value="<%=priority%>"/>
             </td>
-            <td style="width: 13%" align="center">
+            <td style="width: <%=part3Percent%>%" align="center">
                 <button id="<%=editButtonId%>" style="margin-left: 5px">选项</button>
                 <button id="<%=deleteButtonId%>" style="margin-left: 10px; margin-right: 5px">删除</button>
             </td>
-            <td style="width: 10%" align="center">
+            <td style="width: <%=part4Percent%>%" align="center">
                 <img id="<%=upBtnId%>" src="<%=upImgUrl%>" alt="移动到下面" style="vertical-align: middle;width: 24px;padding:0px;margin:0px;cursor:pointer"/>
                 <img id="<%=downBtnId%>" src="<%=downImgUrl%>" alt="移动到上面" style="vertical-align: middle;width: 24px;padding:0px;margin:0px;cursor:pointer"/>
             </td>
@@ -244,21 +249,21 @@ for (int j = dateIntList.size() - 1; j >= 0; j--) {
                 String downImgUrl = "/img/down1.png";
         %>
         <tr id="<%=trId%>">
-            <td style="width: 61%">
+            <td style="width: <%=part1Percent%>%">
                 <input id="<%=textId%>" type="text" size="80" value="<%=content%>" style="margin-left: 10px;"/>
             </td>
-            <td style="width: 20%; height: 30px;" align="center">
+            <td style="width: <%=part2Percent%>%; height: 30px;" align="center">
                 <div id="<%=rateId%>" style="height:20px;width: 100px;float:left"></div>
                 <button id="<%=resetButtonId%>" style="margin-left: 3px;margin-top: 2px">重置</button>
                 <input id="<%=starId%>" type="hidden" value="<%=rateValue%>"/>
                 <input id="<%=hiddenTid%>" type="hidden" value="<%=hiddenTidValue%>"/>
                 <input id="<%=priorityId%>" type="hidden" value="<%=priority%>"/>
             </td>
-            <td style="width: 13%" align="center">
+            <td style="width: <%=part3Percent%>%" align="center">
                 <button id="<%=editButtonId%>" style="margin-left: 5px">编辑</button>
                 <button id="<%=deleteButtonId%>" style="margin-left: 10px; margin-right: 5px">删除</button>
             </td>
-            <td style="width: 10%" align="center">
+            <td style="width: <%=part4Percent%>%" align="center">
                 <img id="<%=upBtnId%>" src="<%=upImgUrl%>" alt="移动到下面" style="vertical-align: middle;width: 24px;padding:0px;margin:0px;cursor:pointer"/>
                 <img id="<%=downBtnId%>" src="<%=downImgUrl%>" alt="移动到上面" style="vertical-align: middle;width: 24px;padding:0px;margin:0px;cursor:pointer"/>
             </td>
@@ -347,21 +352,21 @@ for (int j = dateIntList.size() - 1; j >= 0; j--) {
                 String downImgUrl = "/img/down1.png";
         %>
         <tr id="<%=trId%>">
-            <td style="width: 61%">
+            <td style="width: <%=part1Percent%>%">
                 <input id="<%=textId%>" type="text" size="80" value="<%=content%>" style="margin-left: 10px;"/>
             </td>
-            <td style="width: 20%; height: 30px;" align="center">
+            <td style="width: <%=part2Percent%>%; height: 30px;" align="center">
                 <div id="<%=rateId%>" style="height:20px;width: 100px;float:left"></div>
                 <button id="<%=resetButtonId%>" style="margin-left: 3px;margin-top: 2px">重置</button>
                 <input id="<%=starId%>" type="hidden" value="<%=rateValue%>"/>
                 <input id="<%=hiddenTid%>" type="hidden" value="<%=hiddenTidValue%>"/>
                 <input id="<%=priorityId%>" type="hidden" value="<%=priority%>"/>
             </td>
-            <td style="width: 13%;" align="center">
+            <td style="width: <%=part3Percent%>%;" align="center">
                 <button id="<%=editButtonId%>" style="margin-left: 5px">编辑</button>
                 <button id="<%=deleteButtonId%>" style="margin-left: 10px; margin-right: 5px">删除</button>
             </td>
-            <td style="width: 10%" align="center">
+            <td style="width: <%=part4Percent%>%" align="center">
                 <img id="<%=upBtnId%>" src="<%=upImgUrl%>" alt="移动到下面" style="vertical-align: middle;width: 24px;padding:0px;margin:0px;cursor:pointer"/>
                 <img id="<%=downBtnId%>" src="<%=downImgUrl%>" alt="移动到上面" style="vertical-align: middle;width: 24px;padding:0px;margin:0px;cursor:pointer"/>
             </td>
